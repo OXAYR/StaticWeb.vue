@@ -1,38 +1,27 @@
 <template>
    <v-toolbar :elevation="4" color="white" height="100">
     <v-btn variant="plain">
-
       <span>
       Start Framing
       </span>
     </v-btn>
-    <v-btn variant="plain">
+    <v-btn variant="plain" class="mx-4">
       <span>
       How it works
       </span>
     </v-btn>
+    <v-spacer></v-spacer>
     <v-toolbar-title>
-      <img src="../assets/hank-logo.svg" alt="hank.logo" width="125" height="125" style="margin-right: 90px;">
+      <img src="../assets/hank-logo.svg" alt="hank.logo" width="125" style="margin-right:95px ;" >
       </v-toolbar-title>
+      <v-spacer></v-spacer>
       <v-btn variant="plain">
       <span>
       Support
       </span>
     </v-btn>
-    <v-btn variant="plain">
-      <v-icon
-      size="large"
-      color="black"
-      icon="mdi-shopping"
-    ></v-icon>
-    </v-btn>
-    <v-btn variant="plain">
-      <v-icon
-      size="large"
-      color="black"
-      icon="mdi-account"
-    ></v-icon>
-    </v-btn>
+    <v-btn class="mx-4" density="default" icon="mdi-shopping"></v-btn>
+    <v-btn class="mr-10" density="default" icon="mdi-account"></v-btn>
     </v-toolbar>
   </template>
   <script>

@@ -1,31 +1,21 @@
 <template>
-    <v-item-group selected-class="bg-primary">
-      <v-container>
-        <v-row>
-          <v-col
-            v-for="n in 3"
-            :key="n"
-            cols="12"
-            md="4"
-          >
-            <v-item v-slot="{ isSelected, selectedClass, toggle }">
-              <v-card
-                :class="['d-flex align-center', selectedClass]"
-                dark
-                height="200"
-                @click="toggle"
-              >
-                <div
-                  class="text-h3 flex-grow-1 text-center"
-                >
-                  {{ isSelected ? 'Selected' : 'Click Me!' }}
-                </div>
-              </v-card>
-            </v-item>
-          </v-col>
-        </v-row>
-      </v-container>
-    </v-item-group>
+   <v-container>
+    <v-row>
+      <v-col align-self="center"
+        v-for="n in 4"
+        :key="n"
+        cols="4"
+        sm="12"
+        md="3"
+      >
+        <v-card class="ma-4 pa-4 text-left rounded lighten-4" :elevation="3">
+          <img src="../assets/Slide_item.jpg" alt="slider" class=" w-100">
+          <h3 >Brancasting</h3>
+          <p>Wire-brushed bare wood</p>
+        </v-card>
+      </v-col>
+    </v-row>
+    </v-container>
   </template>
   <script></script>
   

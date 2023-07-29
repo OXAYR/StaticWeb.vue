@@ -1,12 +1,10 @@
 <template>
-  <div>
-    
-  </div>
+  <v-app></v-app>
 </template>
 
 <script>
 export default {
-  name: 'LandingPage',
+  name: 'LowerContent',
   props: {
     msg: String
   }
