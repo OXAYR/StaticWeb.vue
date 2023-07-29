@@ -34,6 +34,7 @@
     </div> 
     </v-content>
     <FooterComp/>
+    <footer>hello</footer>
   </v-app>
 </template>
 
