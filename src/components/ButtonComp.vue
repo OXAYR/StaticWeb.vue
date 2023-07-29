@@ -1,6 +1,7 @@
 <template>
     <v-content>
-        <v-btn class="ma-7 text-none" variant="tonal" rounded="xl" size="x-large" color="yellow-darken-4" >{{ text }}</v-btn>
+        <v-btn class="ma-7 bg-yellow-lighten-3" elevation="0" rounded="xl" size="x-large" >
+            <span class="text-button pa-2"> {{ text }}</span></v-btn>
     </v-content>    
 </template>
 <script>

@@ -1,5 +1,5 @@
 <template>
-   <v-toolbar :elevation="4" color="white" height="100">
+   <v-app-bar :elevation="4" color="white" height="100" >
     <v-btn variant="plain">
       <span>
       Start Framing
@@ -22,7 +22,7 @@
     </v-btn>
     <v-btn class="mx-4" density="default" icon="mdi-shopping"></v-btn>
     <v-btn class="mr-10" density="default" icon="mdi-account"></v-btn>
-    </v-toolbar>
+    </v-app-bar>
   </template>
   <script>
     export default {

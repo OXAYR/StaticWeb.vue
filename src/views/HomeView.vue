@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <NavBar/>
-    <v-content>
+    <v-content style="margin-top: 10rem;">
       <BanNer msg=" Cost effective readymade sizes. 
       Choose a frame style then upload your photo and we'll print, build,
       and dispatch your frame the next day. Ideal for quick gifts." header="Standard sizes & gift frames"
@@ -13,12 +13,12 @@
       imageAlt="ItemCard"/>
       <ButtonComp text="Design a custom frame"/>
 
-    <div style="background-color:rgba(245,245,244);">
+    <div class="bg-blue-grey-lighten-5">
       <BanNer msg="Cost effective readymade sizes. 
       Choose a frame style then upload your photo and we'll print, 
       build, and dispatch your frame the next day. Ideal for quick gifts." header="Standard sizes & gift frames" 
       :imageSrc="require('../assets/lowerContent.png')"
-      imageAlt="LowerBanner"/>
+      imageAlt="LowerBanner" color="bg-blue-grey-lighten-5" />
       
       <ItemCard text="20x30cm textured bare wood frame" header="Small Gift Frame in Brancaster (P)" 
       :imageSrc="require('../assets/Slide_item-2.jpg')"
@@ -29,12 +29,12 @@
       Choose one of our gallery walls and upload your photos in minutes, 
       or get one of our designers to help create a truly custom one. Coming soon!" header="Gallery walls" 
       :imageSrc="require('../assets/lowerContent-2.png')"
-      imageAlt="LowerBanner2"/>
+      imageAlt="LowerBanner2" color="bg-blue-grey-lighten-5"/>
       <ButtonComp text="Coming Soon!"/>
-    </div> 
+    </div>
+    
     </v-content>
-    <FooterComp/>
-    <footer>hello</footer>
+    <FooterComp />
   </v-app>
 </template>
 

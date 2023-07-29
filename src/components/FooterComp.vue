@@ -1,6 +1,6 @@
 <template>
   <v-footer
-    class="bg-brown-darken-4"
+    class="bg-black"
   >
   <v-container >
       <v-row>
@@ -16,7 +16,7 @@
       <v-col
         cols="2"
         > 
-        <div class="mt-10">
+        <div class="my-10">
         <p class="text-subtitle-1"><b>START FRAMING</b></p> 
         <p class="text-subtitle-1 mb-1 mt-3">Browse All Frames</p>
         <p class="text-subtitle-1 my-1">Upload a Photo</p>
@@ -27,7 +27,7 @@
       <v-col
         cols="2"
         > 
-        <div class="mt-10">
+        <div class="my-10">
         <p class="text-subtitle-1"><b>HOW IT WORKS</b></p> 
         <p class="text-subtitle-1 mb-1 mt-3">Materials & sustainability</p>
         <p class="text-subtitle-1 my-1">Pricing</p>
@@ -38,7 +38,7 @@
       <v-col
         cols="2"
         > 
-        <div class="mt-10">
+        <div class="my-10">
         <p class="text-subtitle-1"><b>SUPPORT</b></p> 
         <p class="text-subtitle-1 mb-1 mt-3">Our Services</p>
         <p class="text-subtitle-1 my-1">Inspiration</p>
@@ -50,29 +50,30 @@
       <v-col
         cols="4"
         > 
-        <div class="mt-10">
+        <div class="my-10">
         <p class="text-subtitle-1"><b>SIGN UP FOR EMAIL UPDATES</b></p>
+        <v-text-field class="my-5" placeholder="Enter Email" >
+          <v-btn variant="plain" >
+            Submit
+          </v-btn>
+        </v-text-field>
         </div>
       </v-col>
       </v-row>
       </v-container>
+  </v-footer>
+  <v-footer>
+    <p class="text-overline">© 2021 Hang Framing Ltd</p>
   </v-footer>
 </template>
   
 <script>
 export default {
   name:'FooterComp',
-  data: () => ({
-    icons: [
-      'mdi-facebook',
-      'mdi-twitter',
-      'mdi-instagram',
-    ],
-  }),
 }
 </script>
   
   <!-- Add "scoped" attribute to limit CSS to this component only -->
   <style scoped lang="scss">
-  
+
   </style>
