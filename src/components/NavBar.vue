@@ -1,7 +1,7 @@
 <template>
    <v-app-bar :elevation="4" color="white" height="100" >
     <v-btn variant="plain">
-      <span>
+      <span class="ml-10">
       Start Framing
       </span>
     </v-btn>
