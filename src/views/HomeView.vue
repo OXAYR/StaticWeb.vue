@@ -13,7 +13,7 @@
       imageAlt="ItemCard"/>
       <ButtonComp text="Design a custom frame"/>
 
-    <div class="bg-blue-grey-lighten-5">
+      <div class="bg-blue-grey-lighten-5">
       <BanNer msg="Cost effective readymade sizes. 
       Choose a frame style then upload your photo and we'll print, 
       build, and dispatch your frame the next day. Ideal for quick gifts." header="Standard sizes & gift frames" 

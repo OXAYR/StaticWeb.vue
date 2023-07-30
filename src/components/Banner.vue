@@ -12,7 +12,7 @@
         </v-col>
         <v-col cols="12" md="6">
           <v-sheet class="ma-2 pa-2 wrap" :class="color">
-            <img :src="imageSrc" :alt="imageAlt" class="w-100 h-auto">
+            <img :src="imageSrc" :alt="imageAlt" class="w-100 h-100">
           </v-sheet>
         </v-col>
       </v-row>
