@@ -3,7 +3,7 @@
     class="bg-black"
   >
   <v-container >
-      <v-row>
+      <v-row class="d-flex flex-wrap">
         <v-col
         cols="2"
         >

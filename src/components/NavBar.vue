@@ -1,28 +1,36 @@
 <template>
+ <!-- <div class="d-md-none">
+    <v-container>
+      <v-app-bar  :elevation="4"  color="white" height="100">
+        <v-app-bar-nav-icon/>
+        <v-toolbar-title>
+          <img src="../assets/hank-logo.svg" alt="hank.logo" width="125" >
+        </v-toolbar-title>
+        <v-btn class="mx-4" density="default" icon="mdi-shopping"></v-btn>
+      </v-app-bar>
+    </v-container>
+  </div> -->
+ <div>
+  <v-container>
    <v-app-bar :elevation="4" color="white" height="100" >
-    <v-btn class="ml-10" variant="plain">
-      <span >
+    <v-app-bar-nav-icon class=" d-md-none"/>
+    <v-btn class="d-none d-md-flex" variant="plain">
       Start Framing
-      </span>
     </v-btn>
-    <v-btn variant="plain" class="mx-4">
-      <span>
+    <v-btn  variant="plain" class=" d-none d-md-flex">
       How it works
-      </span>
     </v-btn>
-    <v-spacer></v-spacer>
-    <v-toolbar-title>
-      <img src="../assets/hank-logo.svg" alt="hank.logo" width="125" style="margin-right:95px ;" >
+    <v-toolbar-title >
+      <img class="mr-10" src="../assets/hank-logo.svg" alt="hank.logo" width="125" >
       </v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-btn variant="plain">
-      <span>
+      <v-btn class=" d-none d-md-flex" variant="plain">
       Support
-      </span>
     </v-btn>
-    <v-btn class="mx-4" density="default" icon="mdi-shopping"></v-btn>
-    <v-btn class="mr-10" density="default" icon="mdi-account"></v-btn>
+    <v-btn density="default" icon="mdi-shopping"></v-btn>
+    <v-btn class="mr-10 d-none d-md-flex" density="default" icon="mdi-account"></v-btn>
     </v-app-bar>
+  </v-container>
+    </div>
   </template>
   <script>
     export default {
