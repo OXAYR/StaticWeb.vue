@@ -1,13 +1,14 @@
 <template>
   <v-sheet width="300" class="mx-auto">
+    <h1 style="margin-bottom: 2rem;">Sign In</h1>
     <v-form >
       <v-text-field
-        v-model="firstName"
-        label="First name"
+        v-model="formLogin.email"
+        label="Email"
       ></v-text-field>
       <v-text-field
-        v-model="lastName"
-        label="Last name"
+        v-model="formLogin.password"
+        label="password"
       ></v-text-field>
     </v-form>
   </v-sheet>
@@ -62,11 +63,5 @@ methods:{
 </script>
 
 <style scoped>
-fieldset{
-  margin-bottom: 2rem;
-}
-.Button{
 
-  margin-top: 2rem;
-}
 </style>

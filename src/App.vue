@@ -1,14 +1,13 @@
 <template>
+  <nav>
+  
+ 
+</nav> 
   <v-app>
   <NavBar/>
-  <router-view/>
+  <router-view style="margin-top: 10rem; margin-bottom: 10rem;"/>
   <FooterComp/>
 </v-app>
-  <!-- <nav> -->
-    <!-- <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-    
-  </nav> -->
 </template>
 <script>
 import NavBar from "./components/NavBar.vue";

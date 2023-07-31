@@ -1,7 +1,6 @@
 <template>
   <v-app>
-    <NavBar/>
-    <v-content style="margin-top: 10rem;">
+    <v-content>
       <BanNer msg=" Cost effective readymade sizes. 
       Choose a frame style then upload your photo and we'll print, build,
       and dispatch your frame the next day. Ideal for quick gifts." header="Standard sizes & gift frames"
@@ -32,29 +31,25 @@
       imageAlt="LowerBanner2" color="bg-blue-grey-lighten-5"/>
       <ButtonComp text="Coming Soon!"/>
     </div>
-    
     </v-content>
-    <FooterComp />
   </v-app>
 </template>
 
 <script>
 // @ is an alias to /src
 
-import NavBar from '@/components/NavBar.vue'
+
 import BanNer from '@/components/Banner.vue'
 import ItemCard from '@/components/ItemCard.vue'
 import ButtonComp from '@/components/ButtonComp.vue'
-import FooterComp from '@/components/FooterComp.vue'
+
 
 export default {
   name: 'HomeView',
   components: {
-    NavBar,
     BanNer,
     ItemCard,
     ButtonComp,
-    FooterComp
   }
 }
 </script>
