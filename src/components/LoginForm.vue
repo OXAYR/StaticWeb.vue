@@ -12,14 +12,23 @@
       ></v-text-field>
     </v-form>
   </v-sheet>
+  <ButtonComp text="login"/>
+  <v-btn block variant="plain">
+    <span class="text-button"> forget password </span>
+  </v-btn>
 </template>
 <script>
+
 import router from '@/router';
-    export default {
+import ButtonComp from '@/components/ButtonComp.vue'
+export default {
   name: 'LoginForm',
   props: {
       msg: String,
     },
+  components:{
+    ButtonComp
+  },
   data() {
     return {
         validCredential: false,
