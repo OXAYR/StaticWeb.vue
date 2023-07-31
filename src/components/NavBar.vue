@@ -1,15 +1,5 @@
 <template>
- <!-- <div class="d-md-none">
-    <v-container>
-      <v-app-bar  :elevation="4"  color="white" height="100">
-        <v-app-bar-nav-icon/>
-        <v-toolbar-title>
-          <img src="../assets/hank-logo.svg" alt="hank.logo" width="125" >
-        </v-toolbar-title>
-        <v-btn class="mx-4" density="default" icon="mdi-shopping"></v-btn>
-      </v-app-bar>
-    </v-container>
-  </div> -->
+ 
  <div>
   <v-container>
    <v-app-bar :elevation="4" color="white" height="100" >

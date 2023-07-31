@@ -1,9 +1,7 @@
 <template>
   <div>
     <v-container>
-      <!-- Use a Vuetify grid to create responsive columns -->
       <v-row>
-        <!-- Use responsive classes to adjust column layout based on screen size -->
         <v-col cols="12" md="6" align-self="center">
           <v-sheet class="ma-4 pa-4 text-left text-wrap" :class="color">
             <h1 class="text-h4 text-medium">{{ header }}</h1>
