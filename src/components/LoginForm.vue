@@ -1,6 +1,6 @@
 <template>
   <v-sheet width="300" class="mx-auto">
-    <v-form disabled>
+    <v-form >
       <v-text-field
         v-model="firstName"
         label="First name"
@@ -15,7 +15,7 @@
 <script>
 import router from '@/router';
     export default {
-  name: 'Login',
+  name: 'LoginForm',
   props: {
       msg: String,
     },
@@ -41,20 +41,20 @@ methods:{
             }
           }
       },
-    Valid: function(obj) {
-        this.error = [];
-        const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*()_+{}\[\]:;<>,.?~\\/\-='|"])[a-zA-Z0-9!@#$%^&*()_+{}\[\]:;<>,.?~\\/\-='|"']{8,}$/;
-        const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    // Valid: function(obj) {
+    //     this.error = [];
+    //     const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*()_+{}\[\]:;<>,.?~\\/\-='|"])[a-zA-Z0-9!@#$%^&*()_+{}\[\]:;<>,.?~\\/\-='|"']{8,}$/;
+    //     const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
         
-      if (!emailPattern.test(obj.email)) {
-        this.error.push("Invalid Email");
-      } 
-      if (!passwordPattern.test(obj.password)) {
-          this.error.push("Invalid Password");
-      }
+    //   if (!emailPattern.test(obj.email)) {
+    //     this.error.push("Invalid Email");
+    //   } 
+    //   if (!passwordPattern.test(obj.password)) {
+    //       this.error.push("Invalid Password");
+    //   }
         
-      }
+    //   }
     
     }
     }
